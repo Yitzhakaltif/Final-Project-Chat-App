@@ -29,8 +29,7 @@ const User = ({user, selectUser, chat }) => {
             <img src={user.avatar || Img} alt="avatar" className="avatar" />
 
             <h4>{user.name}</h4>
-            {/* if uou are reading this and wondering why this isnt working, its is because firebase decided this doesnt need to work anymore... */}
-            {/* i guess i learned the lesson of not depending on a cloud database the hard way... */}
+          
             {data?.from !== user1 && data?.unread && (
               <small className="unread">Unread</small>
             )}
@@ -40,8 +39,7 @@ const User = ({user, selectUser, chat }) => {
             className={`user_status ${user.isOnline ? "online" : "offline"}`}
           ></div>
         </div>
-         {/* if uou are reading this and wondering why this isnt working, its is because firebase decided this doesnt need to work anymore... */}
-            {/* i guess i learned the lesson of not depending on a cloud database the hard way... */}
+        
         {data && (
           <p className="truncate">
             <strong>{data.from === user1 ? "Me:" : null}</strong>

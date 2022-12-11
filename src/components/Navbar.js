@@ -36,6 +36,7 @@ const Navbar = () => {
           </>
         )}
       </div>
+      <Link to="/profile">Profile</Link>
     </nav>
   );
 };
