@@ -3,7 +3,7 @@ build
 firebase.json
 .firebaserc
 package-lock.json
-
+.github
 # Logs
 logs
 *.log
